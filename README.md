@@ -1,19 +1,21 @@
 # Descent SVD Method
 
-This is the code repository for our descent SVD method. 
-
-
+This is the code repository for our descent SVD method.  
 
 ## Requirements
 
 - Python $\geq$ 3.8
 - Torch
 - Torchvision
-- PIL
-- Matplotlib
-- mpi4py
+- PIL  (for image processing)
+- Matplotlib (for visualization）
+- mpi4py (for parallelization）
 
 
+
+## Code structure
+
+`main.py` is the executive file for our descent SVD method, and `randomized_svd.py` is the classic randomized SVD algorithm used for comparision.
 
 ## Execute SVD
 
@@ -31,11 +33,15 @@ You can select parameters in `main.py`  like:
   visualized = True # Whether to visualize the result
 ```
 
-If you select to execute SVD in parallel  (Recommended), you should run in the terminal:
+Importantly, if you choose to execute the Descent SVD **in parallel** (which is recommended), you should run the following command in the terminal:
 
 ```terminal
-mpiexec -n k(the concrete number,like 50) python main.py
+mpiexec -n k python main.py
 ```
 
 where the process number is equivalent to `k`.
+
+
+
+
 

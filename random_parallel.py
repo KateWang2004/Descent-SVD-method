@@ -29,7 +29,6 @@ def randomized_svd(A, k, n_max, epsilon, n_iter=20, device="cpu"):
         VT: Approximate right singular vectors transpose of shape (k, n
     """
 
-
     # Move A to the target device
     A = A.to(device)
     m, n = A.shape
