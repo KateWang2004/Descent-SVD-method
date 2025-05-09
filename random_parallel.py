@@ -270,7 +270,8 @@ def parallel_svd(matrix, k, n_max, epsilon, device):
     N, M = matrix.shape
 
     if rank == 0:
-        S = lanczos_svd_torch(matrix, k, device)
+        # S = lanczos_svd_torch(matrix, k, device)
+        S = torch.linalg.svdvals(matrix).to(device)
     else:
         S = None
 
