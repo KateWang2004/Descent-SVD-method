@@ -23,7 +23,7 @@ You can select parameters in `main.py`  like:
 
 ```python
   # Select the parameters
-  image = Image.open('./figures/Goldhill.png')  # The target image path
+  image = Image.open('./figures/Hill.png')  # The target image path
   k = 50 # The target number of singular values
   device = torch.device("cpu") # or "cuda" for GPU
   n_max = 5 # The maximum number of iterations for Descent SVD
