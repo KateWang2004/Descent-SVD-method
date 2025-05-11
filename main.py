@@ -100,18 +100,18 @@ def execute(image,k,device,n_max,epsilon,parallel,randomized,visualized):
 
     if visualized:
     # Optionally plot the image
-        plot_image(final_image, './figures/gold_reconstructed.jpg')
+        plot_image(final_image, './gold_reconstructed.jpg')
 
 
 
 if __name__ == "__main__":
     # Select the parameters
-    image = Image.open('./figures/Goldhill.png')  # The target image
-    k = 50 # The target number of singular values
+    image = Image.open('./figures/Hill.png')  # The target image
+    k = 150 # The target number of singular values
     device = torch.device("cpu") # or "cuda" for GPU
     n_max = 5 # The maximum number of iterations for Descent SVD
     epsilon = 1e-10 # The tolerance for convergence
-    parallel = True # Whether to use parallel computation
+    parallel = True# Whether to use parallel computation
     randomized = True # Whether to use randomized SVD
     visualized = True # Whether to visualize the result
 
