@@ -13,7 +13,7 @@ This is the code repository for our descent SVD method.
 
 ## Code structure
 
-`main.py` is the executive file for our descent-based Singular Value Decomposition (SVD) method, which is designed to efficiently compute the singular value decomposition of large matrices using optimization techniques on Riemannian manifolds. This method focuses on improving the speed and robustness of SVD computations, especially for high-dimensional data, through iterative descent-based optimization techniques.
+`Des-SVD` is the executive file for our descent-based Singular Value Decomposition (SVD) method, which is designed to efficiently compute the singular value decomposition of large matrices using optimization techniques on Riemannian manifolds. This method focuses on improving the speed and robustness of SVD computations, especially for high-dimensional data, through iterative descent-based optimization techniques.
 
 `jacobi_svd.py `implements the classic randomized SVD algorithm. The randomized approach utilizes a combination of random projections and orthogonalization to compute a low-rank approximation of the singular vectors, providing a fast, probabilistic alternative to traditional SVD.
 
@@ -25,7 +25,7 @@ The three methods mentioned above—randomized SVD, Riemannian SVD, and Lanczos 
 
 ## Execute SVD
 
-You can select parameters in `main.py`  like:
+You can select parameters in `Des-SVD/main.py`  like:
 
 ```python
   # Select the parameters
@@ -42,7 +42,7 @@ You can select parameters in `main.py`  like:
 Importantly, if you choose to execute the Descent SVD **in parallel** (which is recommended), you should run the following command in the terminal:
 
 ```terminal
-mpiexec -n k python main.py
+mpiexec -n k python Des-SVD/main.py
 ```
 
 where the process number is equivalent to `k`.
