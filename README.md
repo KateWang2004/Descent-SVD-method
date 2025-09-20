@@ -21,7 +21,7 @@ This is the code repository for our descent SVD method.
 
 `lanczos_svd.py` implements the Lanczos algorithm, a classical iterative method for computing eigenvalues and eigenvectors. It is commonly used for approximating the singular values and vectors of large matrices. 
 
-The three methods mentioned above—randomized SVD, Riemannian SVD, and Lanczos SVD—are compared with our descent-based SVD (Des-SVD) method in this paper. The comparison aims to highlight the advantages and limitations of each approach in terms of computational efficiency, accuracy, and scalability, especially when dealing with large-scale and high-dimensional data. By benchmarking these methods under various conditions, we demonstrate the effectiveness of our Des-SVD method in terms of both speed and robustness, while showcasing its ability to efficiently handle large, sparse, and noisy matrices.
+The three methods mentioned above—Jacobi SVD, Riemannian SVD, and Lanczos SVD—are compared with our descent-based SVD (Des-SVD) method in this paper. The comparison aims to highlight the advantages and limitations of each approach in terms of computational efficiency, accuracy, and scalability, especially when dealing with large-scale and high-dimensional data. By benchmarking these methods under various conditions, we demonstrate the effectiveness of our Des-SVD method in terms of both speed and robustness, while showcasing its ability to efficiently handle large, sparse, and noisy matrices.
 
 ## Execute SVD
 
