@@ -13,7 +13,7 @@ This is the code repository for our descent SVD method.
 
 ## Code structure
 
-`Des-SVD` is the executive file for our descent-based Singular Value Decomposition (SVD) method, which is designed to efficiently compute the singular value decomposition of large matrices using optimization techniques on Riemannian manifolds. This method focuses on improving the speed and robustness of SVD computations, especially for high-dimensional data, through iterative descent-based optimization techniques.
+`Des-SVD` is the folder for our descent-based Singular Value Decomposition (SVD) method, which is designed to efficiently compute the singular value decomposition of large matrices using optimization techniques. This method is available for parallization and random sampling, through iterative descent-based optimization techniques.
 
 `jacobi_svd.py `implements the classic randomized SVD algorithm. The randomized approach utilizes a combination of random projections and orthogonalization to compute a low-rank approximation of the singular vectors, providing a fast, probabilistic alternative to traditional SVD.
 
