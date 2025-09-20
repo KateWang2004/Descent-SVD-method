@@ -8,7 +8,7 @@ This is the code repository for our descent SVD method.
 - Torch
 - Torchvision
 - PIL  (for image processing)
-- Matplotlib (for visualization）
+- Matplotlib (for visualization)
 - mpi4py (for parallel processing; ensure that your device has enough CPU cores available).
 
 ## Code structure
